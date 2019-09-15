@@ -6,15 +6,18 @@
   </head>
   <body>
     <header>
-      <a><img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-      <!--Форма поиска-->
+      <a ><img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт" style="background-color:#85cd8c"></a> 
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <label for="search-field">Поиск</label>
+				<input type="text" id="search-field" name="search" placeholder="Поиск:">
+      </form>
     <ul>
       <li><a href="">Закладки:0</a></li>
       <li><a href="">Корзина:0</a></li>
       <li><a href="">Оформить заказ</a></li>
     </ul>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <a href="tel:+78125550555" aria-label="Наш телефон">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     <ul>
       <li><a href="">Войти</a></li>
@@ -33,9 +36,9 @@
       </nav>
     </header>
     <main>
-      <h1>Магазин Техномарт</h1><!--невидимый-->
+      <h1 class="visually-hidden">Магазин Техномарт</h1>
       <section>
-        <h2>Предложения магазина</h2><!--невидимый-->
+        <h2 class="visually-hidden">Предложения магазина</h2>
         <ul>
           <li>
             <h3>Материалы</h3>
@@ -165,8 +168,26 @@
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>      
-        <a href=""><img src="img/map.png" width="300" height="158" alt="Офис находится по адресу Большая Конюшенная, 19"></a>   
+        <a href=""></a>><img src="img/map.png" width="300" height="158" alt="Офис находится по адресу Большая Конюшенная, 19">Офис на большой карте</a>   
         <a href="">Заблудились? Напишите нам!</a>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Офис на большой карте</h2>
+        <img src="img/bigmap.png" width="940" height="446" alt="Офис находится по адресу Большая Конюшенная, 19, между Волынским переулком и Конюшенной площадью, недалеко от музея Пушкина">
+        <button type="button">Закрыть карту</button>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Отправка сообщения</h2>
+        <button type="button">Закрыть</button>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" id="name-field" name="name" placeholder="Имя Фамилия:">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="text" id="email-field" name="email" placeholder="email@example.com">
+          <label for="message-field">Текст письма:</label>
+          <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -180,7 +201,7 @@
           <li><a href="">Контакты</a></li>
         </ul>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" aria-label="Наш телефон">+7 (812) 555-05-55</a>
         <ul >
           <li><a href="">Материалы</a></li>
           <li><a href="">Техника</a></li>

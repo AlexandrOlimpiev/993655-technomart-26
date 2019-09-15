@@ -7,18 +7,21 @@
   <body>
     <header>
       <a href="index.html"><img src="/img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
-      <!--Форма поиска-->
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <label for="search-field">Поиск</label>
+				<input type="text" id="search-field" name="search" placeholder="Поиск:">
+      </form>
       <ul>
         <li><a href="">Закладки:0</a></li>
         <li><a href="">Корзина:0</a></li>
         <li><a href="">Оформить заказ</a></li>
       </ul>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <a href="tel:+78125550555" aria-label="Наш телефон">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <ul>
-        <li><a href="">Равшан Джамшутович</a></li>
-        <li><a href="">Выход</a></li>
+        <li><a href="" aria-label="Перейти к профайлу">Равшан Джамшутович</a></li>
+        <li><a href="">Выйти из профиля</a></li>
         <li><a href="">Мои заказы</a></li>
         <li><a href="">Личный кабинет</a></li>
       </ul>
@@ -38,34 +41,41 @@
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a>Каталог</a></li>
-        <li><a href="">Инструменты</a</li>
+        <li><a href="#">Инструменты</a</li>
         <li>Перфораторы</li>
       </ul>
       <h1>Перфораторы</h1>
-      
-        <h2>Фильтр:</h2>
-      <!--Форма-->
-        <h3>Цена:</h3>
-      
-        <h3>Производители:</h3>
-        <input id="bosch-checkbox" name="bosch" type="checkbox" value="bosch" checked>
-        <label for="bosch-checkbox">Bosch</label>
-        <input id="intersckol-checkbox" name="intersckol" type="checkbox" value="intersckol">
-        <label for="intersckol-checkbox">Интерскол</label>
-        <input id="makita-checkbox" name="makita" type="checkbox" value="makita" checked>
-        <label for="makita-checkbox">Makita</label>
-        <input id="dewalt-checkbox" name="dewalt" type="checkbox" value="dewalt">
-        <label for="dewalt-checkbox">Dewalt</label>
-        <input id="hitachi-checkbox" name="hitachi" type="checkbox" value="hitachi">
-        <label for="hitachi-checkbox">Hitachi</label>
-        <h3>Питание:</h3>
-        <input type="radio" name="supply" id="battery" value="battery" checked>
-        <label for="battery">Аккумуляторные</label>
-        <input type="radio" name="supply" id="power" value="power">
-        <label for="power">Сетевые</label>
-        <button type="submit">Показать</button>
-      <!--Конец формы-->
-      
+      <h2>Фильтр:</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset>
+          <legend>Цена:</legend> 
+          <input type="text" id="min-field" name="min" value="0">
+          <label for="min-field">min</label>
+          <input type="text" id="max-field" name="max" value="30000">
+          <label for="max-field">max</label>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <input type="checkbox" id="bosch-checkbox" name="bosch" value="bosch" checked>
+          <label for="bosch-checkbox">Bosch</label>
+          <input type="checkbox" id="intersckol-checkbox" name="intersckol" value="intersckol">
+          <label for="intersckol-checkbox">Интерскол</label>
+          <input type="checkbox" id="makita-checkbox" name="makita" value="makita" checked>
+          <label for="makita-checkbox">Makita</label>
+          <input type="checkbox" id="dewalt-checkbox" name="dewalt" value="dewalt">
+          <label for="dewalt-checkbox">Dewalt</label>
+          <input type="checkbox" id="hitachi-checkbox" name="hitachi" value="hitachi">
+          <label for="hitachi-checkbox">Hitachi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <input type="radio" id="battery-radio" name="supply" value="battery" checked>
+          <label for="battery-radio">Аккумуляторные</label>
+          <input type="radio" id="power-radio" name="supply" value="power">
+          <label for="power-radio">Сетевые</label>
+          <button type="submit">Показать</button>
+        </fieldset>
+      </form>
       <section>
         <h2>сортировка:</h2>
         <ul>
@@ -79,7 +89,7 @@
         </ul>
       </section>
       <section>
-        <h2>Каталог товара</h2><!--скрыть-->
+        <h2 class="visually-hidden">Каталог товара</h2>
         <article>
           <h3><a href="">Перфоратор BOSCH BFG 3000</a></h3>
           <img src="img/bfg-3000.jpg" width="218" height="170" alt="Оптимальный перфоратор">
@@ -160,6 +170,12 @@
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
+      <section>
+        <p>Товар добавлен в корзину</p>
+        <button type="button">Закрыть</button>
+        <a href="">Оформить заказ</a>
+        <button type="button">Продолжить покупки</button>
+      </section>
     </main>  
     <footer>
       <div>
@@ -172,7 +188,7 @@
           <li><a href="">Контакты</a></li>
         </ul>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" aria-label="Наш телефон">+7 (812) 555-05-55</a>
         <ul>
           <li><a href="">Материалы</a></li>
           <li><a href="">Техника</a></li>
