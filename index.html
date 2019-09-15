@@ -6,10 +6,10 @@
   </head>
   <body>
     <header>
-      <a ><img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт" style="background-color:#85cd8c"></a> 
+      <a ><img class="logo-image" src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a> 
       <form action="https://echo.htmlacademy.ru" method="GET">
         <label for="search-field">Поиск</label>
-				<input type="text" id="search-field" name="search" placeholder="Поиск:">
+				<input type="search" id="search-field" name="search" placeholder="Поиск:">
       </form>
     <ul>
       <li><a href="">Закладки:0</a></li>
@@ -62,12 +62,12 @@
           </li>
           <li>
             <div>
-              <h3>Дрели</h3>
+              <b>Дрели</b>
               <span>Соседям на радость!</span>
               <img src="img/slider-image-1.jpg" width="620" height="266" alt="Сверлим стены">
             </div>
             <div>
-              <h3>Перфораторы</h3>
+              <b>Перфораторы</b>
               <span>Настоящие мужские игрушки</span>
               <img src="img/slide-image-2.jpg" width="620" height="266" alt="Штробим бетон">
             </div>
@@ -171,24 +171,7 @@
         <a href=""></a>><img src="img/map.png" width="300" height="158" alt="Офис находится по адресу Большая Конюшенная, 19">Офис на большой карте</a>   
         <a href="">Заблудились? Напишите нам!</a>
       </section>
-      <section>
-        <h2 class="visually-hidden">Офис на большой карте</h2>
-        <img src="img/bigmap.png" width="940" height="446" alt="Офис находится по адресу Большая Конюшенная, 19, между Волынским переулком и Конюшенной площадью, недалеко от музея Пушкина">
-        <button type="button">Закрыть карту</button>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Отправка сообщения</h2>
-        <button type="button">Закрыть</button>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" id="name-field" name="name" placeholder="Имя Фамилия:">
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="text" id="email-field" name="email" placeholder="email@example.com">
-          <label for="message-field">Текст письма:</label>
-          <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
+      
     </main>
     <footer>
       <div>
@@ -221,5 +204,23 @@
         <p>Разработано -<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Офис на большой карте</h2>
+      <img src="img/bigmap.png" width="940" height="446" alt="Офис находится по адресу Большая Конюшенная, 19, между Волынским переулком и Конюшенной площадью, недалеко от музея Пушкина">
+      <button type="button">Закрыть карту</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Отправка сообщения</h2>
+      <button type="button">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" id="name-field" name="name" placeholder="Имя Фамилия:">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" id="email-field" name="email" placeholder="email@example.com">
+        <label for="message-field">Текст письма:</label>
+        <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
