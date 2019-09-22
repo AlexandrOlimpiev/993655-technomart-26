@@ -1,0 +1,524 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Базовое оформление хэдера*/
+header {
+  background-color: #f4f7f9;
+}
+
+.header-top {
+  background-color:#293449;
+}
+
+.header-top a, .header-bottom a {
+  color:inherit;
+}
+
+header ul {
+  list-style: none;
+}
+
+.header-logo {
+  display: block;
+  width: 220px;
+  height: 47px ;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+background-color: #ba2732;
+}
+
+.header-search-label {
+  font-size: 0;
+}
+
+.header-search {
+  border:none;
+  background-color: #293449;
+}
+
+.header-search:hover {
+  background-color: #212a3a;
+}
+
+
+.header-order {
+  display: block;
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+
+.header-middle .header-info {
+  width: 196px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  color: #ee3643;
+}
+
+.header-middle .header-telephon {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-middle .header-address {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+.header-account li {
+  background-color: white;
+}
+.header-account .login-btn {
+  width: 121px;
+}
+
+.header-account .registration-btn {
+  width: 150px;
+}
+.header-account ul a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+.account-links a {
+  text-decoration: underline;
+  font-size: 16px;
+  color: #32425c;
+}
+
+.header-bottom {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.header-bottom a {
+  line-height: 17px;
+}
+
+/* Базовое оформление футера*/
+footer {
+  background-color: #32425c;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-top {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-logo {
+  display: block;
+  width: 220px;
+  height: 68px ;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.footer-top a {
+  color: inherit;
+}
+
+.footer-menu a:hover, .list-products a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:active, .list-products a:active {
+  opacity: 0.5;
+}
+
+.list-products a {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  background-color: #293449;
+  font-size: 16px;
+}
+.footer-bottom a {
+  color: #ffd180;
+}
+
+.footer-social-btn a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #212a3a;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.vk-btn {
+  background-image: url(../img/icon-vk.svg);
+}
+
+.fb-btn {
+  background-image: url(../img/icon-fb.svg);
+}
+
+.insta-btn {
+  background-image: url(../img/icon-insta.svg);
+}
+
+/* Базовое оформление main главной страницы*/
+
+.main ul {
+  list-style: none;
+}
+
+.offer {
+  margin-bottom:700px ; /*временно*/
+}
+
+.offer-list li {
+  width: 300px;
+  height: 123px;
+}
+
+.offer-list a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  background-color: #000000;
+  opacity: 0.1;
+  color: inherit;
+  font-size: 14px;
+}
+
+.offer-list b {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offer-materials {
+  background-color: #ffbf47;
+}
+
+.offer-tool {
+  background-color: #3bbce3;
+}
+
+.offer-technics {
+  background-color: #dc91d8;
+}
+
+.offer-discounts {
+  background-color: #8ed78f;
+}
+
+.offer-delivery {
+  background-color: #ffc047
+}
+
+.promo-slider a {
+  display: block;
+  width: 195px;
+  height: 38px;
+  opacity: 1;
+  background-color: #ee3643;
+  color: inherit;
+  font-size: 14px;
+}
+
+.main h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.all-manufacturers-btn, .popular-product-btn {
+  width: 253px;
+  font-size: 14px;
+  color: inherit;
+  background-color: #ee3643;
+}
+
+.popular-manufacturers-list a {
+  display: block;
+  width: 220px;
+  height: 145px;
+  border: solid 1px #eaeaea;
+}
+
+.popular-manufacturers-list a:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  border: none;
+}
+
+.popular-manufacturers-list a:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  border: none;
+}
+
+.services {
+  background: #f4f7f9;
+}
+
+.services h2, .services p {
+  color: #000000;
+}
+
+.services p {
+  font-family: "PT+Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services h3 {
+  font-size: 36px;
+  line-height: 36px;
+  color:#32425c;
+}
+
+.slider-credit a {
+  display: block;
+  width: 195px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  color: inherit;
+  background-color: #ff5357;
+}
+
+.services-control a {
+  display: block;
+  width: 240px;
+  height: 61px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
+}
+
+.services-control a:hover {
+  background-color: #293449;
+}
+
+.services-control a:active {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0.6px 0.8px 0 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+
+.company-info, .office-map {
+  color: #000000;
+}
+
+.company-info h2, .office-map h2 {
+ font-size: 30px;
+ line-height: 30px;
+}
+
+.company-info h2, .office-map h2 {
+  font-size: 30px;
+  line-height: 30px;
+ }
+
+ .company-info p, .office-map p {
+  font-family: "PT+Sans", Arial, sans-serif; 
+  font-size: 13px;
+  line-height: 24px;
+ }
+
+ .modal-contact-btn, .company-info-btn {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: white;
+ }
+
+ .company-info li {
+  font-size: 18px;
+  line-height: 20px;
+ }
+
+ .bigmap-link {
+  font-size: 0;
+ }
+
+ /* Базовое оформление main страницы каталога*/
+
+.main-catalog {
+  font-family: "PT+Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.bread-crumbs a {
+  color: inherit;
+}
+
+.main-catalog h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.main-catalog h2 {
+  font-size: inherit;
+  line-height: inherit;
+}  
+.filter h2 {
+  background-color: #f7f3ec;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form .filter-manufacturers, .filter-form .filter-price {
+  border-bottom: 1px solid #000000;
+}
+
+.filter-form label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-form legend {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-price input {
+  width: 95px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #f7f3ec;
+  border: none;
+}
+
+.filter-price label {
+  font-size: 0;
+}
+
+.ffilter-form .show-btn {
+  width: 140px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting a {
+  color: inherit;
+}
+
+.product-title a {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.cart-product del{
+  font-size: 17px;
+  color: #999999;
+}
+.cart-product ins, .cart-product span{
+  display: block;
+  font-size: 17px;
+  color: #ffffff;
+  background: url(../img/red-button.svg) no-repeat left;
+ }
+
+ .buy-btn, .bookmarks-btn {
+  display: block;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  width: 135px;
+  height: 38px;
+ }
+
+ .buy-btn {
+  color: #ffffff;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+}
+
+.bookmarks-btn {
+  color: #32425c;
+  border: solid 3px #63a63e;
+}
+
+.pages-list a {
+  display: block;
+  color: inherit;
+  border: solid 1px #e5e5e5;
+  height: 38px;
+}
+
+.pages-list .page {
+  width: 38px;
+}
+
+.pages-list .next-page {
+  width: 140px;
+}
+
+.helpful-information {
+  background-color: #f4f7f9;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.helpful-information h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.helpful-information p {
+  line-height: 24px;
+}
