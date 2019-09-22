@@ -8,11 +8,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-top">
         <a class="header-logo"><img class="logo-image" src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a> 
         <form action="https://echo.htmlacademy.ru" method="GET">
-          <label class="header-search-label" for="search-field">Поиск</label>
+          <label class="header-search-label visually-hidden" for="search-field">Поиск</label>
           <input class="header-search" type="search" id="search-field" name="search" placeholder="Поиск:">
         </form>
         <ul>
@@ -28,16 +28,10 @@
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="header-account">
-          <ul>
+          <ul class="account-management">
             <li class="login-btn"><a href="">Войти</a></li>
             <li class="registration-btn"><a href="">Регистрация</a></li>  
-            <li class="profile-btn hidden"><a  href="" aria-label="Перейти к профайлу">Равшан Джамшутович</a></li>
-            <li class="exit-btn hidden"><a href="">Выйти из профиля</a></li>
           </ul>  
-          <div class="account-links">
-            <a class="order hidden" href="">Мои заказы</a>
-            <a class="cabinet hidden" href="">Личный кабинет</a>
-          </div>  
         </div>  
       </div>
       <nav class="header-bottom">
@@ -95,7 +89,7 @@
               <li><button type="button">1</button></li>
               <li><button type="button">2</button></li>
             </ul>
-            <a href="catalog.html">Открыть каталог</a>
+            <a class="slider-open-btn" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
       </section>
@@ -191,7 +185,7 @@
       </section>
       
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-top">
         <a class="footer-logo"><img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
         <ul class="footer-menu">
@@ -220,8 +214,8 @@
           <li><a class="fb-btn" href="">Фейсбук</a></li>
           <li><a class="insta-btn" href="">Инстаграм</a></li>
         </ul>
-        <p>Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано -<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <p>Обратная связь:<a class="footer-mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано -<a class="footer-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
     <section class="bigmap hidden">

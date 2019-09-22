@@ -12,7 +12,7 @@
       <div class="header-top">
         <a class="header-logo" href="index.html"><img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a>
         <form action="https://echo.htmlacademy.ru" method="GET">
-          <label class="header-search-label" for="search-field">Поиск</label>
+          <label class="header-search-label visually-hidden" for="search-field">Поиск</label>
           <input class="header-search" type="search" id="search-field" name="search" placeholder="Поиск:">
         </form>
         <ul>
@@ -28,9 +28,7 @@
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="header-account">
-          <ul>
-            <li class="login-btn hidden"><a href="">Войти</a></li>
-            <li class="registration-btn hidden"><a href="">Регистрация</a></li>  
+          <ul class="account-management">
             <li class="account-profile-btn"><a href="" aria-label="Перейти к профайлу">Равшан Джамшутович</a></li>
             <li class="account-exit-btn"><a href="">Выйти из профиля</a></li>
           </ul>  
@@ -95,15 +93,15 @@
       </div>
       <section class="sorting">
         <h2>сортировка:</h2>
-        <ul>
-          <li><a href="">По цене</a></li>
+        <ul class="sorting-list">
+          <li><a class="sorting-active-item" href="">По цене</a></li>
           <li><a href="">По типу</a></li>
           <li><a href="">По функционалу</a></li>
         </ul>
-        <ul>
+        <ul class="sorting-trend">
           <li><a href="">С наименьшего</a></li>
           <li><a href="">С наибольшего</a></li>
-        </ul>
+        </ul >
       </section>
       <section class="catalog-products">
         <h2 class="visually-hidden">Каталог товара</h2>
@@ -177,10 +175,10 @@
           <a class="bookmarks-btn" href="#">В закладки</a>
         </article>
         <ul class="pages-list">
-          <li class="page"><a>1</a></li>
-          <li class="page"><a href="">2</a></li>
-          <li class="page"><a href="">3</a></li>
-          <li class="next-page"><a href="">Следующая</a></li>
+          <li ><a class="active-page">1</a></li>
+          <li ><a class="page" href="">2</a></li>
+          <li ><a class="page" href="">3</a></li>
+          <li ><a class="next-page" href="">Следующая</a></li>
         </ul>
       </section>
       <section class="helpful-information">
@@ -188,7 +186,7 @@
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </main>  
-    <footer>
+    <footer class="footer">
       <div class="footer-top">
         <a class="footer-logo" href="index.html"><img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт"></a>
         <ul class="footer-menu">
@@ -217,8 +215,8 @@
           <li><a class="fb-btn" href="">Фейсбук</a></li>
           <li><a class="insta-btn" href="">Инстаграм</a></li>
         </ul>
-        <p>Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано -<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <p>Обратная связь:<a class="footer-mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано -<a class="footer-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </footer>
     <section class="modal-basket hidden">
