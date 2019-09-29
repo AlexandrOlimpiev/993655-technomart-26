@@ -2,7 +2,9 @@ html {
   box-sizing: border-box; 
 }
 
-*, *::before, *::after { 
+*,
+*::before,
+*::after { 
   box-sizing: inherit;
 }
 
@@ -40,9 +42,9 @@ a {
 }
 
 .container {
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 960px;
+  padding: 0px 10px;
+  margin: 0 auto;
 }
 
 /* Базовое оформление хэдера*/
@@ -67,19 +69,16 @@ a {
 .header-middle,
 .header-menu {
   display: flex;
-  flex-direction: row;
 }
 
 .header-top ul {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 } 
 
 .header-top-list {
   padding: 0;
   margin: 0;
-  width: 450px;
 }
 
 .header-top a,
@@ -91,7 +90,7 @@ a {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: 150px;
+  min-width: 150px;
 }
 
 .header-logo {
@@ -100,7 +99,8 @@ a {
   padding-top: 13px;
   width: 220px;
   background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.24),
+  0 5px 0 0 #ee3643;
 }
 
 .header-logo:hover {
@@ -112,12 +112,22 @@ a {
 }
 
 .header-search-form {
-  flex-grow:1;
+  flex-grow:1; 
 }
 
 .header-search {
+  display: block;
+  position: relative;
+  padding: 11px 0px 12px 49px;
   border:none;
   background-color: #293449;
+  background-image: url("..img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 17px 11px;
+}  
+
+.header-search::placeholder {
+  color: #ffffff;
 }
 
 .header-search:hover {
@@ -141,6 +151,7 @@ a {
 }
 
 .header-order {
+  padding-left: 20px;
   background-color: #63a63e;
 }
 
@@ -255,14 +266,12 @@ a {
 
 .footer-top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 .footer ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
   padding: 0;
   margin: 0;
 }
@@ -302,14 +311,13 @@ a {
 
 .footer-bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   font-size: 16px;
   line-height: 18px;
 }
 
 .footer-bottom-copyright {
-width: 228px;
+  width: 228px;
 }
 
 .footer-bottom-mail {
@@ -352,7 +360,7 @@ width: 228px;
 
 .footer-social-btn a:hover,
 .footer-social-btn a:active {
-    background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .vk-btn {
@@ -386,7 +394,6 @@ width: 228px;
 
 .offer-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -561,7 +568,6 @@ width: 228px;
 
 .popular-product-top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 25px 24px 26px 30px;
   background-color: #f9f5f0;
@@ -580,15 +586,21 @@ width: 228px;
 
 .popular-product-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 21px;
   padding-bottom: 21px;
 }
 
+.popular-product-list .cart-product {
+  margin-right: 10px;
+}
+
+.popular-product-list .cart-product:nth-child(4) {
+  margin-right: 10px;
+}
+
 .popular-manufacturers-top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 25px 24px 26px 30px;
   background-color: #f9f5f0;
@@ -596,7 +608,6 @@ width: 228px;
 
 .popular-manufacturers .popular-manufacturers-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 85px;
@@ -629,13 +640,8 @@ width: 228px;
 }
 
 .services {
-  font-family: "Cuprum", Arial, sans-serif;
   background: #f4f7f9;
-}
-
-.services h2 {
-  padding-top: 68px;
-  padding-bottom: 33px;
+  padding: 68px 0px 99px 0px;
 }
 
 .services h2, 
@@ -645,11 +651,12 @@ width: 228px;
 
 .services p,
 .services h3 {
-  font-family: "PT+Sans", Arial, sans-serif;  
+   
   margin: 0;
 }
 
 .services p {
+  margin-top: 30px;
   font-size: 13px;
   line-height: 24px;
   width: 400px;
@@ -657,28 +664,34 @@ width: 228px;
 
 .services-wrap {
   display: flex;
-  flex-direction: row;
+  margin-top: 74px;
 }
 
 .services-slider {
-  width: 100%;
+  width: 650px;
 }
 
 .services-slider li {
-  width: auto;
   position: relative;
 }
 
 .services-slider h3 {
   margin: 0;
-  padding: 0px 0px 0px 80px;
   font-size: 36px;
   line-height: 36px;
   color:#32425c;
 }
 
-.services-slider p {
-   padding: 30px 0px 0px 80px;
+.slider-delivery p {
+  width: 275px;
+}
+
+.slider-guarantee p {
+  width: 379px;
+}
+
+.slider-credit p {
+  width: 279px;
 }
 
 .slider-delivery::after {
@@ -724,7 +737,7 @@ width: 228px;
 
 .services .services-control {
   width: 240px;
-  padding: 68px 0px 139px 0px;
+  margin-right: 80px;
 }
 
 .services-control a {
@@ -749,7 +762,6 @@ width: 228px;
 
 .info-wrap {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -773,44 +785,44 @@ width: 228px;
   color: #000000;
  }
 
- .company-info p, 
- .office-map p {
-  font-family: "PT+Sans", Arial, sans-serif; 
+.company-info p, 
+.office-map p {
+  font-family: "PT Sans", Arial, sans-serif; 
   font-size: 13px;
   line-height: 24px;
  }
 
- .modal-contact-btn,
- .company-info-btn {
-   display: block;
+.modal-contact-btn,
+.company-info-btn {
+  display: block;
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
   color: white;
- }
+}
 
- .modal-contact-btn {
-   padding: 11px 0px 9px 63px;
- }
+.modal-contact-btn {
+  padding: 11px 0px 9px 63px;
+}
 
- .company-info-btn {
+.company-info-btn {
   padding: 11px 0px 9px 41px;
   width: 220px;
 }
 
- .company-info li {
+.company-info li {
   font-size: 18px;
   line-height: 20px;
- }
+}
 
- .bigmap-link {
+.bigmap-link {
   font-size: 0;
- }
+}
 
  /* Базовое оформление main страницы каталога*/
 
 .main-catalog {
-  font-family: "PT+Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -824,7 +836,6 @@ width: 228px;
 
 .bread-crumbs {
   display: flex;
-  flex-direction: row;
 }
 
 .bread-crumbs a {
@@ -846,7 +857,6 @@ width: 228px;
 
 .main-content-wrap {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -908,14 +918,12 @@ width: 228px;
 
 .sorting {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: #f7f3ec;
 }
 
 .sorting ul {
   display: flex;
-  flex-direction: row;
   background-color: #f7f3ec;
 }
 
@@ -925,7 +933,6 @@ width: 228px;
 
 .catalog-products {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -1006,7 +1013,7 @@ width: 228px;
 }
 
 .bookmarks-btn:hover {
-border: solid 3px #32425c;
+  border: solid 3px #32425c;
 }
 
 .bookmarks-btn:active {
@@ -1016,7 +1023,6 @@ border: solid 3px #32425c;
 
 .pages-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 284px;
 }
