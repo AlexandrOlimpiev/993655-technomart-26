@@ -88,9 +88,9 @@ a {
 
 .header-top-list a {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 5px;
   min-width: 150px;
+  text-align: left;
 }
 
 .header-logo {
@@ -118,7 +118,7 @@ a {
 .header-search {
   display: block;
   position: relative;
-  padding: 11px 0px 12px 49px;
+  padding: 11px 12px 12px 49px;
   border:none;
   background-color: #293449;
   background-image: url("..img/icon-search.svg");
@@ -139,6 +139,14 @@ a {
   color: #000000;
 }
 
+.header-top-list .header-bookmarks {
+  padding-left: 44px;
+}
+
+.header-top-list .header-basket {
+  padding-left: 50px;
+}
+
 .header-bookmarks:hover, 
 .header-basket:hover {
   background-color: #212a3a;
@@ -150,8 +158,8 @@ a {
   opacity: 0.6;
 }
 
-.header-order {
-  padding-left: 20px;
+.header-top-list .header-order {
+  text-align: center;
   background-color: #63a63e;
 }
 
@@ -480,20 +488,25 @@ a {
   position: relative;
 }
 
-.promo-slider b {
+.promo-slider-slogan {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  width: 570px;
   top: 24px;
   left: 24px;
+}
+
+.promo-slider-slogan b {
   font-size: 36px;
   line-height: 36px;
 }
 
-.promo-slider span {
-  position: absolute;
-  top: 62px;
-  left: 24px;
+.promo-slider-slogan span {
   font-size: 18px;
   line-height: 24px;
+  margin-top: 8px;
+  padding-left: 1px;
 }
 
 .slider-side-btn button {
@@ -592,11 +605,11 @@ a {
 }
 
 .popular-product-list .cart-product {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
-.popular-product-list .cart-product:nth-child(4) {
-  margin-right: 10px;
+.popular-product-list .cart-product:nth-child(4n) {
+  margin-right: 0;
 }
 
 .popular-manufacturers-top {
