@@ -69,7 +69,6 @@ a {
   background-color: #ba2732;
 }
 
-/* Базовое оформление хэдера*/
 .header {
   background-color: #f4f7f9;
   font-family: "Cuprum", Arial, sans-serif;
@@ -440,7 +439,6 @@ a {
   opacity: 0.6;
 }
 
-/* Базовое оформление футера*/
 .footer {
   background-color: #32425c;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1093,8 +1091,6 @@ a {
   margin: 32px 0px;
 }
 
- /* Базовое оформление main страницы каталога*/
-
 .main-catalog {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1286,13 +1282,13 @@ a {
 }
 
 .range-scale {
- position: absolute;
- width: 180px;
- height: 2px; 
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background-color: #d7dcde;
+  position: absolute;
+  width: 180px;
+  height: 2px; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d7dcde;
 }
 
 .range-bar {
@@ -1384,9 +1380,12 @@ a {
 }
 
 .catalog-products {
+  padding-bottom: 60px;
+}
+
+.catalog-page {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 60px;
 }
 
 .sorting-list a {
@@ -1422,8 +1421,8 @@ a {
   fill: #ee3643;
 }
 
-.catalog-products .cart-product:nth-child(3n+1) {
-margin-right: 0px;
+.catalog-page .cart-product:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .cart-product {
@@ -1445,7 +1444,7 @@ margin-right: 0px;
 }
 
 .cart-product:hover {
-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .cart-product:hover .cart-action {
@@ -1661,8 +1660,6 @@ box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   line-height: 30px;
 }
 
-/*Большая карта*/
-
 .bigmap {
   width: 940px;
   height: 446px;
@@ -1694,8 +1691,6 @@ box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   box-shadow: none;
   z-index: 29;
 }
-
-/*Модальное окно добавления товара*/
 
 .modal-close-btn {
   padding: 0px;
@@ -1753,7 +1748,6 @@ box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
   color: #000000;
 }
 
-/*Модальное окно обратной связи*/
 .modal-contact {
   width: 620px;
   position: fixed;
