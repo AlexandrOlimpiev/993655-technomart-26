@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-norm-style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -14,7 +13,7 @@
           <div class="header-top">
             <a class="header-logo"><img class="logo-image" src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт"></a> 
             <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <input class="header-search" type="search" id="search-field" name="search" placeholder="Поиск:">
+              <input class="header-search" type="search" id="search-field" name="search" placeholder="Поиск:" autocomplete="off">
               <label class="header-search-label" for="search-field"><span class="visually-hidden">Поиск</span></label>
             </form>
             <ul class="header-top-list">
@@ -58,9 +57,11 @@
         <section class="offer">
           <h2 class="visually-hidden">Предложения магазина</h2>
           <ul class="offer-list">
-            <li class="offer-materials colored-tile new-product">
+            <li class="offer-materials colored-tile">
               <b>Материалы</b>
               <a href="">на любой вкус</a>
+              <div class="new-product"><span class="visually-hidden">новинка</span></div>
+                <div>
             </li>
             <li class="offer-tool colored-tile">
               <b>Инструмент</b>
@@ -101,7 +102,7 @@
                 <button class="left-side-btn" type="button"><span class="visually-hidden">Влево</span></button>
               </div>
               <ul class="slider-bottom-btn">
-                <li><button class="first-bottom-btn" type="button"><span class="visually-hidden">1</span></button></li>
+                <li><button class="first-bottom-btn active" type="button"><span class="visually-hidden">1</span></button></li>
                 <li><button class="second-bottom-btn" type="button"><span class="visually-hidden">2</span></button></li>
               </ul>
               <a class="slider-open-btn universal-button" href="catalog.html">Открыть каталог</a>
@@ -144,7 +145,7 @@
                 <a class="bookmarks-btn" href="#">В закладки</a>
               </div>  
             </article>
-            <article class="cart-product new-product">
+            <article class="cart-product">
               <h3 class="product-title"><a href="">Перфоратор BOSCH BFG 2000</a></h3>
               <div class="image-product"><img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор для начинающих"></div>
               <span class="discount"></span>
@@ -152,7 +153,8 @@
               <div class="cart-action">
                 <a class="buy-btn" href="#">Купить</a>
                 <a class="bookmarks-btn" href="#">В закладки</a>
-              </div>  
+              </div>
+              <div class="new-product"><span class="visually-hidden">новинка</span><div>
             </article>
           </div>
         </section>
@@ -186,7 +188,7 @@
             <ul class="services-slider">
               <li class="slider-delivery">
                 <h3>Доставка</h3>
-                <p> Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+                <p> Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
               </li>
               <li class="slider-guarantee hidden">
                 <h3>Гарантия</h3>
@@ -302,7 +304,7 @@
       </div>
       <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>  
-    <script src="./js/script.js"></script>
+    <script src="./js/min-script.js"></script>
   </body>
 </html>
 
