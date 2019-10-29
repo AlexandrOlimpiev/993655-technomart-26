@@ -3,7 +3,8 @@ var mapLink = document.querySelector(".bigmap-link");
 var map = document.querySelector(".bigmap");
 
 if (mapLink) {
-  var closeMap = map.querySelector(".modal-close-btn"); 
+  var closeMap = map.querySelector(".modal-close-btn");
+
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     map.classList.remove("hidden");
@@ -23,16 +24,17 @@ if (mapLink) {
     }
   });
 }
+
 //Модальное окно добавления товара
 var basketLinks = Array.prototype.slice.call(document.querySelectorAll(".buy-btn"));
 var basketWindow = document.querySelector(".modal-basket");
-var closeBasketWindow = basketWindow.querySelector(".modal-close-btn"); 
+var closeBasketWindow = basketWindow.querySelector(".modal-close-btn");
 
 basketLinks.forEach(function (link) {
   link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketWindow.classList.remove("hidden");
-  }); 
+    evt.preventDefault();
+    basketWindow.classList.remove("hidden");
+  });
 });
 
 closeBasketWindow.addEventListener("click", function (evt) {
@@ -62,6 +64,7 @@ if (contactLink) {
   var emailField = contactWindow.querySelector("[name=email]");
   var messageField = contactWindow.querySelector("[name=message]");
   var form = contactWindow.querySelector("form");
+
   try {
     storage1 = localStorage.getItem("name");
     storage2 = localStorage.getItem("email");
@@ -72,13 +75,13 @@ if (contactLink) {
   contactLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     contactWindow.classList.remove("hidden");
-    if (storage1&&storage2) {
+    if (storage1 && storage2) {
       nameField.value = storage1;
       emailField.value = storage2;
       messageField.focus();
     } else {
       nameField.focus();
-    }  
+    }
   });
 
   closeСontactWindow.addEventListener("click", function (evt) {
@@ -122,7 +125,7 @@ if (slider) {
   var secondButton = slider.querySelector(".second-bottom-btn");
   var reightButton = slider.querySelector(".reight-side-btn");
   var leftButton = slider.querySelector(".left-side-btn");
-  
+
   firstButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     if (firstSlider.classList.contains("hidden")) {
@@ -131,7 +134,7 @@ if (slider) {
       firstSlider.classList.remove("hidden");
       secondSlider.classList.add("hidden");
     }
-  }); 
+  });
 
   secondButton.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -141,7 +144,7 @@ if (slider) {
       secondSlider.classList.remove("hidden");
       firstSlider.classList.add("hidden");
     }
-  }); 
+  });
 
   leftButton.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -161,11 +164,10 @@ if (slider) {
       secondSlider.classList.remove("hidden");
       firstSlider.classList.add("hidden");
     }
-  }); 
+  });
 }
 
 // Слайдер сервисов
-
 var services = document.querySelector(".services");
 
 if (services) {
@@ -190,7 +192,7 @@ if (services) {
       deliveryButton.classList.add("active");
       deliverySlider.classList.remove("hidden");
     };
-  }); 
+  });
 
   guaranteeButton.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -206,7 +208,7 @@ if (services) {
       guaranteeButton.classList.add("active");
       guaranteeSlider.classList.remove("hidden");
     };
-  }); 
+  });
 
   creditButton.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -222,5 +224,5 @@ if (services) {
       creditButton.classList.add("active");
       creditSlider.classList.remove("hidden");
     };
-  }); 
+  });
 }
